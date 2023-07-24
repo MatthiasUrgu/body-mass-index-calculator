@@ -1,0 +1,17 @@
+.boxContainer {
+  display: flex;
+  flex-direction: column;
+  .blueBox {
+    
+    height: 160vw;
+    background: linear-gradient(140deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(17, 179, 211, 1) 170%);
+    border-bottom-right-radius: 30px;
+    z-index: -1;
+  .textHeader {
+      z-index: 1;
+      position: absolute;
+    }
+  }
+}
