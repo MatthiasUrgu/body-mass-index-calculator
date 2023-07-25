@@ -1,4 +1,19 @@
-//taille titre 
-//taille texte
+//SizGradientFirstColore title & content
+$SizeTitle: 25px;
+$SizeContent: 18px;
+
 //couleurs titre
 //couleurs texte 
+
+//Gradient for the header
+$GradientHeader: linear-gradient(
+    140deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(17, 179, 211, 1) 170%
+  );
+
+
+@mixin reset-list {
+    font-size: 10px;
+    list-style: none;
+}
