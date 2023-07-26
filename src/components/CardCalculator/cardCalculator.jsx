@@ -8,13 +8,16 @@ function CardCalculator({result,resultText}) {
     const [Weight,setWeight] = useState(0)
 
 
-    function toggleMetric(e){
+    function toggleMetric(){
         setMetric(!isMetric)
-       console.log(isMetric);
+        console.log(isMetric);
     }
+
+
+
     function handleHeight(e){
         setHeight(e.target.value)
-        console.log(setHeight);
+        
     }
     function handleWeight(e){
         setWeight(e.target.value)
@@ -23,17 +26,19 @@ function CardCalculator({result,resultText}) {
     function calculateBMI(){
         if(isMetric === "metric"){
             if(Height && Weight){
-                var IMC = Weight / (Height*Height)
-                return IMC.toFixed(1)
+                let IMC = Weight / (Height*Height)
+                return IMC.toFixed(1);
 
         }
     }
-        else if(isMetric === "imperial"){
-            if(Height && Weight){
-                var BMI = (Weight / (Height*Height)) * 703
-                return BMI.toFixed(1)
-            }
-        }
+   /*  else if(isMetric === "imperial"){
+        if(Height && Weight){
+            let BMI = Weight / (Height*Height) * 703
+            return BMI.toFixed(1);
+
+    }
+} */
+        
     }
 
   
@@ -42,12 +47,12 @@ function CardCalculator({result,resultText}) {
                     <h1>Enter your details below</h1>
                     <div className={`${s.flexRadio} ${s.marginTop}`}>
                         <div className={s.metric}>
-                            <input onChange={toggleMetric} type="radio" name="Metric"  value="metric" checked={isMetric} />
+                            <input onChange={toggleMetric} type="radio" name="Metric"  value="false" checked={isMetric} />
                             
                             <label>Metric</label>
                         </div>
                         <div className={s.imperial}>
-                            <input onChange={toggleMetric} type="radio" name="imperial" value="imperial" checked={!isMetric}/>
+                            <input onChange={toggleMetric} type="radio" name="imperial" value="true" checked={!isMetric}/>
                             <label>Imperial</label>
                         </div>
                     </div>
@@ -58,7 +63,7 @@ function CardCalculator({result,resultText}) {
 
                             <input className={s.inputHeight} type="number" value={Height} onChange={handleHeight}/>
                             <span className={s.spanMetric}>
-                                {isMetric ? 'M' : 'inch'}
+                                {isMetric ? 'M' : 'Ibs'}
                             </span>
                         </div>
                         <div className={`${s.weightNumber} ${s.marginTop}`}>
@@ -66,7 +71,7 @@ function CardCalculator({result,resultText}) {
 
                             <input className={s.inputHeight}type="number" value={Weight} onChange={handleWeight}/>
                             <span className={s.spanMetric}>
-                                {isMetric ? 'Kg' : 'Ibs'}
+                                {isMetric ? 'Kg' : 'Inch'}
                             </span>
                         </div>
                     </div>
@@ -76,7 +81,7 @@ function CardCalculator({result,resultText}) {
                             {Height && Weight ? `${calculateBMI()}` : "Padawan tu es Zeubi"}
                             
                             </span>
-                        <p>Your BMi suggest you're a healthy weight. Yiour ideal weight is between  {result} {isMetric ? 'Kg' : 'Ibs'}.</p>
+                        <p>Your BMi suggest you're a healthy weight. Yiour ideal weight is between  {Height && Weight ? `${calculateBMI()}` : ""} {isMetric ? 'Kg' : 'Ibs'}.</p>
 
                     </div>
                 </div>
