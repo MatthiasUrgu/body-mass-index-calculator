@@ -1,9 +1,40 @@
-//SizGradientFirstColore title & content
-$SizeTitle: 25px;
-$SizeContent: 18px;
+//import fonts
+@font-face {
+  font-family: Heebo-400;
+  src: url(assets/fonts/Heebo/Heebo-Regular.ttf);
+}
+@font-face {
+  font-family: Heebo-500;
+  src: url(assets/fonts/Heebo/Heebo-Medium.ttf);
+}
+@font-face {
+  font-family: BarlowRegular;
+  src: url(assets/fonts/Barlow/Barlow-Regular.ttf);
+}
+//mixin table
+@mixin title{
+  font-family:Heebo-400;
+  font-size: $SizeTitle;
+}
 
-//couleurs titre
-//couleurs texte 
+@mixin subTtile{
+  font-family:Heebo-400;
+  font-size: $SizeTitle;
+}
+
+@mixin contentText{
+  font-family: BarlowRegular;
+  font-size: $SizeContent;
+}
+
+//Size title & content
+$SizeTitle: 25px;
+$SizeContent: 14px;
+
+//Background-color Card
+$backCard:rgba(254, 254, 254);
+//Color metric and radio button
+$BluePrimmary:rgb(99, 68, 255);
 
 //Gradient for the header
 $GradientHeader: linear-gradient(
@@ -13,7 +44,3 @@ $GradientHeader: linear-gradient(
   );
 
 
-@mixin reset-list {
-    font-size: 10px;
-    list-style: none;
-}
