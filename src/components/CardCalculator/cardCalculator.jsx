@@ -3,9 +3,9 @@ import s from './style.module.scss'
 
 function CardCalculator({result,resultText}) {
 
-    const [isMetric,setMetric] = useState("metric")
-    const [Height,setHeight] = useState(0)
-    const [Weight,setWeight] = useState(0)
+    const [isMetric,setMetric] = useState(true)
+    const [Height,setHeight] = useState(Number)
+    const [Weight,setWeight] = useState(Number)
 
 
     function toggleMetric(e){
@@ -18,6 +18,7 @@ function CardCalculator({result,resultText}) {
 
 
     function handleHeight(e){
+        
         setHeight(e.target.value)
         
     }
@@ -26,30 +27,16 @@ function CardCalculator({result,resultText}) {
     }
 
     function calculateBMI() {
-        if (isMetric === "metric") {
-          return (Weight / (Height * Height)).toFixed(1);
+        if (isMetric === true) {
+            console.log(isMetric);
+            const IMC = (Weight / (Height * Height))
+          return IMC.toFixed(1);
         } else{
-          return ((Weight / (Height * Height)) * 703).toFixed(1);
+            console.log(isMetric);
+            const BMI = Weight / (Height * Height)*703
+          return BMI.toFixed(1);
         }
       }
- /*    function calculateBMI(){
-        if(isMetric === "metric"){
-                let IMC = Weight / (Height*Height)
-                return IMC.toFixed(1);
-
-        }
-    }
-    else if(isMetric === "imperial"){
-        (Height && Weight){
-            let BMI = Weight / (Height*Height) * 703
-            return BMI.toFixed(1);
-
-    }
-} */ 
-
-        
-    
-
   
     return (
         <div className={s.bmiCalculator}>
@@ -61,7 +48,7 @@ function CardCalculator({result,resultText}) {
                             <label>Metric</label>
                         </div>
                         <div className={s.imperial}>
-                            <input onChange={toggleMetric} type="radio" name="imperial" value="imperial" checked={!isMetric}/>
+                            <input onChange={toggleMetric} type="radio" name="imperial" value="imperial" checked={!isMetric} />
                             <label>Imperial</label>
                         </div>
                     </div>
@@ -78,7 +65,7 @@ function CardCalculator({result,resultText}) {
                         <div className={`${s.weightNumber} ${s.marginTop}`}>
                             <label className={s.labelHeight}>Weight</label>
 
-                            <input className={s.inputHeight}type="number" value={Weight} onChange={handleWeight}/>
+                            <input className={s.inputHeight}type="number" value={Weight} onChange={handleWeight} />
                             <span className={s.spanMetric}>
                                 {isMetric ? 'Kg' : 'Inch'}
                             </span>
