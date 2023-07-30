@@ -37,6 +37,23 @@ function CardCalculator({result,resultText}) {
           return BMI.toFixed(1);
         }
       }
+
+    function CalculateCommunication(){
+        
+            if (calculateBMI() < 18.5){
+                return 'suggest you are a underweight.Your ideal weight is between 18.5 and 24.9.'
+            }
+            if (calculateBMI() > 25 && calculateBMI() < 29.9){
+                return 'suggest you are a overweight. Your ideal weight is between 18.5 and 24.9.'
+            }
+            if (calculateBMI() > 18.5 && calculateBMI() < 25 ){
+                return 'suggest you are a normal healthy weight. Your ideal weight is between 18.5 and 24.9.'
+            }
+            if (calculateBMI() > 29.9){
+                return 'suggest you are obese. Your ideal weight is between 18.5 and 24.9.'
+            }
+        
+    }
   
     return (
         <div className={s.bmiCalculator}>
@@ -77,7 +94,7 @@ function CardCalculator({result,resultText}) {
                             {Height && Weight ? `${calculateBMI()}` : ""}
                             
                             </span>
-                        <p>Your BMi suggest you're a healthy weight. Yiour ideal weight is between  {Height && Weight ? `${calculateBMI()}` : ""} {isMetric ? 'Kg' : 'Ibs'}.</p>
+                        <p>Your {isMetric ? 'IMC' : 'BMI'} {CalculateCommunication()} </p>
                         {/* -----------------Ajoute dialogue si le poids est > pour obèse et < pour trop maigre-------------------- */}
                     </div>
                 </div>
