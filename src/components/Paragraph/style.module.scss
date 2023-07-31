@@ -1,0 +1,14 @@
+@import "/src/variable.scss";
+
+
+.containerParagraph{
+    margin-top: 2em;
+    h1{
+      @include title;
+    }
+    p{
+        margin-top: 2em;
+    @include contentText;
+    }
+
+}
