@@ -1,18 +1,20 @@
 import s from './style.module.scss'
 import ParagraphLogo from 'components/ParagraphLogo/ParagraphLogo';
-import logo1 from "assets/img/logo.png"
+import Food from "assets/img/FoodLogo.png"
+import Sport from "assets/img/SportLogo.png"
+import Sleep from "assets/img/SleepLogo.png"
 function ListParagraphLogo(props) {
     return (
         <section className={s.ListContainer}>
-            <ParagraphLogo logo={logo1}
+            <ParagraphLogo logo={Food}
                         title="Healthy eating"
-                        content="abc"/>
-            <ParagraphLogo logo={logo1}
+                        content="Healthy eating promotes weight control, disease prevention,better digestion,immunity ,mental clarity, and mood."/>
+            <ParagraphLogo logo={Sport}
                         title="Regular exercice"
-                        content="abc"/>
-            <ParagraphLogo logo={logo1}
+                        content="Exercise improves fitness,aids,weight control,elevates mood,and reduces disease risk, fostering wellness and longevity."/>
+            <ParagraphLogo logo={Sleep}
                         title="Adequate sleep"
-                        content="abc"/>
+                        content="Sleep enhances mental clarity,emotional stability,and physical wellness,promoting overall restoration and rejuvenation"/>
         </section>
     );
 }

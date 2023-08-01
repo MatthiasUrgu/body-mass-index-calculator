@@ -1,4 +1,4 @@
-import React from "react";
+
 import s from "./style.module.scss";
 import CardCalculator from "components/CardCalculator/cardCalculator";
 import Logo from "assets/img/logo.png";

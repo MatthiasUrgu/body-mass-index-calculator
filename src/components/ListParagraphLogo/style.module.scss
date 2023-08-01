@@ -1,0 +1,12 @@
+@import "/src/variable.scss";
+
+
+.ListContainer{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    background: $GradientOther;
+    padding: 10px;
+    
+   
+}

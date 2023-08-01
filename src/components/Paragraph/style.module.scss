@@ -1,14 +1,18 @@
 @import "/src/variable.scss";
 
+.containerParagraph {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 
-.containerParagraph{
+  h1 {
+    @include title;
+  }
+  p {
     margin-top: 2em;
-    h1{
-      @include title;
-    }
-    p{
-        margin-top: 2em;
     @include contentText;
-    }
-
+    text-align: center;
+  }
 }
