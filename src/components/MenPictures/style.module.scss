@@ -10,14 +10,15 @@
     margin-top: -6em;
 
   img {
-    
-    width: 350px;
+    overflow-x: hidden;
+    width: 320px;
     z-index: 1;
   }
   .backgroundMen {
     position: relative;
-    top: 270px;
-    width: 300px;
+    top: 246px;
+    left: -30px;
+    width: 320px;
     height: 188px;
     background: linear-gradient(
         45deg,
