@@ -9,7 +9,7 @@
     .cardFlex{
         display: flex ;
         h1{
-            @include subTtile;
+            @include subTitle;
         }
     }
     .cardParagraph{

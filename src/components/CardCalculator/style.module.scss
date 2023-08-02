@@ -9,13 +9,13 @@
   h1 {
     display: flex;
     justify-content: center;
-    @include subTtile;
+    @include subTitle;
   }
   .flexRadio {
     display: flex;
     justify-content: space-around;
     .metric {
-      @include subTtile;
+      @include subTitle;
       font-size: 20px;
 
       label {
