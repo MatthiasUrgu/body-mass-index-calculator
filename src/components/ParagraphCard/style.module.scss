@@ -1,0 +1,25 @@
+@import '/src/variable.scss';
+
+.containerParagraphCard{
+    margin-top: 2em;
+    background: $WhitePrimmary;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: $boxShadow;
+    .cardFlex{
+        display: flex ;
+        h1{
+            @include subTtile;
+        }
+    }
+    .cardParagraph{
+        
+       
+        @include contentText;
+        margin-top: 0.5em;
+        
+        
+        
+        
+    }
+}

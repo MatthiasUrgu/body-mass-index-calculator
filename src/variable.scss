@@ -35,6 +35,7 @@ $SizeContent: 14px;
 $backCard:rgba(254, 254, 254);
 //Color metric and radio button
 $BluePrimmary:#6344ff;
+$WhitePrimmary:#fffdfd;
 
 //Gradient for the header
 $GradientHeader: linear-gradient(
@@ -45,7 +46,9 @@ $GradientHeader: linear-gradient(
 $GradientOther: linear-gradient(
     130deg,
     rgba(255, 255, 255, 0) 1%,
-    rgba(17, 179, 211, 1) 500%
+    rgba(17, 179, 211, 1) 900%
   );
 
+//Box Shadow components
+  $boxShadow : 14px 20px 59px -5px rgba(99,68,255,0.56);
 
