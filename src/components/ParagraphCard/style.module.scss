@@ -8,6 +8,13 @@
     box-shadow: $boxShadow;
     .cardFlex{
         display: flex ;
+        align-items: center;
+
+        gap: 15px;
+        img{
+            width:30px;
+            
+        }
         h1{
             @include subTitle;
         }

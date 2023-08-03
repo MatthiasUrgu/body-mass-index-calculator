@@ -7,7 +7,6 @@ function ParagraphCard({ content,logo, title }) {
         <img src={logo} alt="logo"/>
         <h1>{title}</h1>
       </div>
-      <p className={s.cardParagraph}> Lorem ipsum dolor sit, amet consectetur adipisicing   </p>
       <p className={s.cardParagraph}> {content}</p>
     </section>
   );
