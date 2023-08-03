@@ -13,3 +13,4 @@ function ParagraphCard({ content,logo, title }) {
 }
 
 export default ParagraphCard;
+

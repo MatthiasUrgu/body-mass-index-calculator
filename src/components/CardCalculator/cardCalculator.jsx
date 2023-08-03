@@ -10,9 +10,6 @@ function CardCalculator({result,resultText}) {
 
     function toggleMetric(e){
         setMetric(!isMetric)
-       
-       
-        
     }
 
 
@@ -41,16 +38,16 @@ function CardCalculator({result,resultText}) {
     function CalculateCommunication(){
         
             if (calculateBMI() < 18.5){
-                return 'suggest you are a underweight.Your ideal weight is between 18.5 and 24.9.'
+                return `Your ${isMetric ? 'IMC' : 'BMI'} suggest you are a underweight.Your ideal weight is between 18.5 and 24.9.`
             }
             if (calculateBMI() > 25 && calculateBMI() < 29.9){
-                return 'suggest you are a overweight. Your ideal weight is between 18.5 and 24.9.'
+                return `Your ${isMetric ? 'IMC' : 'BMI'} suggest you are a overweight. Your ideal weight is between 18.5 and 24.9.`
             }
             if (calculateBMI() > 18.5 && calculateBMI() < 25 ){
-                return 'suggest you are a normal healthy weight. Your ideal weight is between 18.5 and 24.9.'
+                return `Your ${isMetric ? 'IMC' : 'BMI'} suggest you are a normal healthy weight. Your ideal weight is between 18.5 and 24.9.`
             }
             if (calculateBMI() > 29.9){
-                return 'suggest you are obese. Your ideal weight is between 18.5 and 24.9.'
+                return `Your ${isMetric ? 'IMC' : 'BMI'} suggest you are obese. Your ideal weight is between 18.5 and 24.9.`
             }
         
     }
@@ -94,8 +91,8 @@ function CardCalculator({result,resultText}) {
                             {Height && Weight ? `${calculateBMI()}` : ""}
                             
                             </span>
-                        <p>Your {isMetric ? 'IMC' : 'BMI'} {CalculateCommunication()} </p>
-                        {/* -----------------Ajoute dialogue si le poids est > pour obèse et < pour trop maigre-------------------- */}
+                        <p> {CalculateCommunication()} </p>
+                        
                     </div>
                 </div>
     );

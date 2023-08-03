@@ -20,11 +20,13 @@
 @mixin subTitle{
   font-family:Heebo-400;
   font-size: $SizeCardTitle;
+  color: $fontColorContent;
 }
 
 @mixin contentText{
   font-family: BarlowRegular;
   font-size: $SizeContent;
+  color: $fontColorContent;
 }
 
 //Size title & content
@@ -34,9 +36,11 @@ $SizeContent: 14px;
 
 //Background-color Card
 $backCard:rgba(254, 254, 254);
-//Color metric and radio button
+
+//Colors 
 $BluePrimmary:#6344ff;
 $WhitePrimmary:#fffdfd;
+$fontColorContent :#262626;
 
 //Gradient for the header
 $GradientHeader: linear-gradient(

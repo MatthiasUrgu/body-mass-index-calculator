@@ -13,7 +13,7 @@ function ParagraphCardList() {
       <ParagraphCard
         logo={Gender}
         title="Gender"
-        content="The development and body fat composition of gitls and boys vary with age. Consequently, a child's age and gender are considered when evaluring their BMI."
+        content="The development and body fat composition of gitls and boys vary withage.Consequently, a child's age and gender are considered when evaluring their BMI."
       />
       <ParagraphCard
         logo={Age}

@@ -6,7 +6,7 @@ function MenPictures() {
     return (
         <section className={s.picture}>
             <div className={s.men}> 
-                <div className={s.backgroundMen}></div>
+                <div  className={s.backgroundMen}></div>
                 <img src={men} alt="men"/>
             </div>
             <Paragraph title="What your BMI result means"

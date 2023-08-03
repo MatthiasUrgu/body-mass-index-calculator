@@ -10,7 +10,7 @@
     margin-top: -6em;
 
   img {
-    overflow-x: hidden;
+   
     width: 320px;
     z-index: 1;
   }
@@ -19,7 +19,7 @@
     top: 246px;
     left: -30px;
     width: 320px;
-    height: 188px;
+    height: 170px;
     background: linear-gradient(
         45deg,
         rgba(255, 255, 255, 0) 0%,
@@ -29,4 +29,36 @@
     z-index: -1;
   }
 }
+}
+
+@media (width > 320px) and (width < 376px){
+  .picture{
+    .men{
+      .backgroundMen{
+        left: -50px;
+        width: 340px ;
+      }
+    
+    }
+  }
+    
+}
+
+@media (width > 375px) and (width < 426px){
+  .picture{
+
+  
+  .men{
+    img{
+      width: 370px;
+    }
+    .backgroundMen {
+      top: 285px ;
+      left: -70px ;
+      width: 400px ;
+      height: 180px ;
+    }
+  }
+}
+
 }

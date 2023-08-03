@@ -59,6 +59,7 @@
       
     );
     @include contentText;
+    color: white;
     h3{
         font-size: 20px
     }
@@ -79,7 +80,28 @@
     font-size: $SizeTitle;
     color: $BluePrimmary;
 }
+
 /* Variable to margin directly all div */
 .marginTop {
   margin-top: 1em;
+}
+
+
+@media (width > 320px) and (width < 426px){
+  //metric unity in the inputs
+  .spanMetric{
+    left: 10em;
+    font-size: $SizeTitle;
+    color: $BluePrimmary;
+}
+
+
+}
+@media (width > 320px) and (width < 376px){
+  //metric unity in the inputs
+  .spanMetric{
+    left: 8.5em;
+    font-size: $SizeTitle;
+    color: $BluePrimmary;
+}
 }

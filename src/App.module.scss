@@ -1,8 +1,18 @@
 .container{
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
 }
 .noMargin{
     margin-left: 0;
     margin-right: 0;
 }
+
+@media (width >  425px) and (width < 769px){
+    section{
+    .container{
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+}
+}
+

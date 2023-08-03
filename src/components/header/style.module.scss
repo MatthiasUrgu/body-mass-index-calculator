@@ -39,16 +39,31 @@
         @include title;
         font-size: 40px;
         line-height: 1.2em;
-        margin-bottom:0.5em
+        margin-bottom: 0.5em;
       }
       p {
-       
         text-align: center;
         @include contentText;
       }
     }
     .bmiCalculator {
       padding-top: 10em;
+    }
+  }
+}
+
+@media (width > 425px) and (width < 769px) {
+  .boxContainer {
+    .blueBox {
+      height: 70vw;
+    }
+    .headerContainer{
+      .textHeader{
+        h1{
+          width: 7.5em;
+        }
+      }
+
     }
   }
 }
