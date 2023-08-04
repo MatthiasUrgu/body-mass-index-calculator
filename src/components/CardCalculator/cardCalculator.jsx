@@ -1,18 +1,15 @@
 import { useState } from 'react';
 import s from './style.module.scss'
 
-function CardCalculator({result,resultText}) {
+function CardCalculator() {
 
     const [isMetric,setMetric] = useState(true)
-    const [Height,setHeight] = useState(Number)
-    const [Weight,setWeight] = useState(Number)
-
+    const [Height,setHeight] = useState(null)
+    const [Weight,setWeight] = useState(null)
 
     function toggleMetric(e){
         setMetric(!isMetric)
     }
-
-
 
     function handleHeight(e){
         
@@ -87,7 +84,7 @@ function CardCalculator({result,resultText}) {
                     </div>
                     <div className={`${s.resultNumber} ${s.marginTop}`}>
                         <div className={s.resultNumberDiv}>
-                        <h3>Your BMI is...</h3>
+                        <h3>{Height && Weight ? "Your BMI is...":"Welcome !" }</h3>
                             <span className={s.result}>
                                 {Height && Weight ? `${calculateBMI()}` : ""}
                                 </span>

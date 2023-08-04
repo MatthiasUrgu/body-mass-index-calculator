@@ -58,6 +58,7 @@
 //Tablette
 @media (width > 425px) and (width < 769px) {
   .boxContainer {
+    
     .blueBox {
       height: 70vw;
     }
@@ -71,3 +72,35 @@
     }
   }
 }
+//Desktop responsive
+@media (width > 768px) and (width < 1025px) {
+  .boxContainer {
+    margin-bottom: 9em;
+    .logoImg{
+      justify-content: flex-start;
+    }
+    .blueBox {
+      height: 55vw;
+      width: 70vw;
+    }
+    .headerContainer{
+      margin-top: 5em;
+      flex-direction: row;
+      gap: 3em;
+      .textHeader{
+        align-items: flex-start;
+        width: 340px;
+
+        h1{
+          width: 7.5em;
+          text-align: left;
+        }
+        p{
+          text-align: left;
+        }
+      }
+
+    }
+  }
+}
+

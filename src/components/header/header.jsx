@@ -17,8 +17,7 @@ function Header({title,content}) {
             {content}
           </p>
         </div>
-        <CardCalculator result="23.4"
-        resultText="85.2"/>
+        <CardCalculator/>
       </div>
       <div className={s.blueBox}></div>
     </section>

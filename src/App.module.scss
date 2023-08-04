@@ -6,8 +6,8 @@
     margin-left: 0;
     margin-right: 0;
 }
-
-@media (width >  425px) and (width < 769px){
+//tablet , desktop responsive
+@media (width >  425px) and (width < 1441px){
     section{
     .container{
         margin-left: 5em;
@@ -15,4 +15,5 @@
     }
 }
 }
+
 
