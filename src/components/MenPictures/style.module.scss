@@ -8,9 +8,7 @@
 
 .men{ 
     margin-top: -6em;
-
   img {
-   
     width: 320px;
     z-index: 1;
   }
@@ -31,6 +29,9 @@
 }
 }
 
+
+
+//Mobile m Responsive
 @media (width > 320px) and (width < 376px){
   .picture{
     .men{
@@ -43,7 +44,7 @@
   }
     
 }
-
+//Mobile L Responsive
 @media (width > 375px) and (width < 426px){
   .picture{
 
@@ -60,5 +61,33 @@
     }
   }
 }
+
+}
+//Tablet responsive
+@media (width > 426px) and (width < 769px){
+
+.picture{
+
+  display: flex;
+  flex-direction: row;
+  
+  .men{
+    width: 300px;
+    img{
+      position: relative;
+      left:-2em;
+      top: -1.35em;
+      width: 350px;
+    }
+    .backgroundMen {
+      top: 247px ;
+      left: -8em ;
+      width: 400px ;
+      height: 180px ;
+    }
+  }
+}
+
+
 
 }
