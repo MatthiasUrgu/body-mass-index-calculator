@@ -5,3 +5,14 @@
     margin-bottom: 4em;
     margin-top: 4em;
 }
+
+
+//Tablet responsive
+@media (width > 425px) and (width < 769px){
+    .cardContainer{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+}

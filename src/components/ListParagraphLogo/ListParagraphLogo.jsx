@@ -14,7 +14,7 @@ function ListParagraphLogo(props) {
                         content="Exercise improves fitness,aids,weight control,elevates mood,and reduces disease risk, fostering wellness and longevity."/>
             <ParagraphLogo logo={Sleep}
                         title="Adequate sleep"
-                        content="Sleep enhances mental clarity,emotional stability,and physical wellness,promoting overall restoration and rejuvenation"/>
+                        content="Sleep enhances mental clarity,emotional stability,and physical wellness,promoting overall restoration and rejuvenation."/>
         </section>
     );
 }

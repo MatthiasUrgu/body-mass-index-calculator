@@ -23,3 +23,12 @@
         margin-top: 1em;
     }
 }
+
+
+@media (width > 425px) and (width < 769px){
+    .containerParagraphCard{
+       margin-right: 2em;
+       height: 150px;
+
+    }
+}
