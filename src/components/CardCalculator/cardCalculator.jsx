@@ -69,29 +69,30 @@ function CardCalculator({result,resultText}) {
 
                     <div className={`${s.calculNumber} ${s.marginTop}`}>
                         <div className={s.heightNumber}>
-                           <label className={s.labelHeight}>Height</label>
+                           <label className={s.label}>Height</label>
 
-                            <input className={s.inputHeight} type="number" value={Height} onChange={handleHeight}/>
+                            <input className={s.input} type="number" value={Height} onChange={handleHeight}/>
                             <span className={s.spanMetric}>
                                 {isMetric ? 'M' : 'Ibs'}
                             </span>
                         </div>
-                        <div className={`${s.weightNumber} ${s.marginTop}`}>
-                            <label className={s.labelHeight}>Weight</label>
+                        <div className={`${s.weightNumber} `}>
+                            <label className={s.label}>Weight</label>
 
-                            <input className={s.inputHeight}type="number" value={Weight} onChange={handleWeight} />
+                            <input className={s.input}type="number" value={Weight} onChange={handleWeight} />
                             <span className={s.spanMetric}>
                                 {isMetric ? 'Kg' : 'Inch'}
                             </span>
                         </div>
                     </div>
                     <div className={`${s.resultNumber} ${s.marginTop}`}>
+                        <div className={s.resultNumberDiv}>
                         <h3>Your BMI is...</h3>
-                        <span className={s.result}>
-                            {Height && Weight ? `${calculateBMI()}` : ""}
-                            
-                            </span>
-                        <p> {CalculateCommunication()} </p>
+                            <span className={s.result}>
+                                {Height && Weight ? `${calculateBMI()}` : ""}
+                                </span>
+                        </div>
+                        <p className={s.paragrapghResult}> {CalculateCommunication()} </p>
                         
                     </div>
                 </div>

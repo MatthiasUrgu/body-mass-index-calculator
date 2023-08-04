@@ -32,10 +32,11 @@
   }
 
   .calculNumber {
-    .labelHeight {
+    .label {
       color: grey;
     }
-    .inputHeight {
+    .input {
+      
       margin-top: 0.5em;
       width: 90%;
       height: 2.5em;
@@ -48,10 +49,8 @@
   }
   .resultNumber {
     padding: 2em;
-    color: white;
     border: none;
     border-radius: 10px;
-    background: rgb(99, 68, 255);
     background: linear-gradient(
       90deg,
       rgb(99, 68, 255) 0%,
@@ -59,7 +58,7 @@
       
     );
     @include contentText;
-    color: white;
+    color: $WhitePrimmary;
     h3{
         font-size: 20px
     }
@@ -79,6 +78,7 @@
     left: 6.5em;
     font-size: $SizeTitle;
     color: $BluePrimmary;
+    
 }
 
 /* Variable to margin directly all div */
@@ -87,7 +87,19 @@
 }
 
 
-@media (width > 320px) and (width < 426px){
+//Mobile M
+@media (width > 320px) and (width < 376px){
+  //metric unity in the inputs
+  .spanMetric{
+    left: 8.5em;
+    font-size: $SizeTitle;
+    color: $BluePrimmary;
+}
+}
+
+
+//mobile L
+@media (width > 376px) and (width < 426px){
   //metric unity in the inputs
   .spanMetric{
     left: 10em;
@@ -97,11 +109,65 @@
 
 
 }
-@media (width > 320px) and (width < 376px){
+
+
+//tablette
+@media (width > 426px) and (width < 769px){
   //metric unity in the inputs
-  .spanMetric{
-    left: 8.5em;
-    font-size: $SizeTitle;
-    color: $BluePrimmary;
+
+  .bmiCalculator{
+    
+    h1{
+      justify-content: flex-start;
+    }
+  .flexRadio{
+    justify-content: flex-start;
+    .imperial{
+      margin-left: 9.5em;
+      
+    }
+  }
+
+  .calculNumber{
+    display: flex;
+    align-items: center;
+    
+    .input {
+      
+      width: 9em;
+      height: 2em;
+   
+    }
+    .spanMetric{
+      display:block;
+      top: -1.6em;
+      left: 7.5em;
+      width: 2em;
+  }
+ 
+  }
+  .resultNumber {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em;
+    border: none;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    background: linear-gradient(
+      90deg,
+      rgb(99, 68, 255) 0%,
+      rgba(99, 68, 255,0.8) 100%
+      
+    );
+   .paragrapghResult{
+    margin: 0;
+    width: 250px;
+   }
+  }
 }
 }
+
+
+
+//Enlever Margin top
