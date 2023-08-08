@@ -89,18 +89,20 @@
     .headerContainer{
       margin-top: 5em;
       flex-direction: row;
-      gap: 3em;
+      align-items: stretch;
+      
       .textHeader{
         align-items: flex-start;
-        width: 340px;
+        width: 25em;
 
         h1{
+          font-size: 3em;
           width: 7.5em;
           text-align: left;
         }
         p{
-          text-align: left;
-        }
+        text-align: left;
+                }
       }
 
     }

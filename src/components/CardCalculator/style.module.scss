@@ -169,14 +169,16 @@
 }
 
 
-//tablette
+//Desktop
 @media (width > 768px) and (width < 1441px){
   //metric unity in the inputs
 
   .bmiCalculator{
-    position: absolute;
-    margin-right: 5em;
-    left: 30em;
+    position: relative;
+    
+   
+    left: 2em;
+    top: -2em;
     margin-top: -1em;
     h1{
       justify-content: flex-start;
@@ -184,7 +186,7 @@
   .flexRadio{
     justify-content: flex-start;
     .imperial{
-      margin-left: 6.5em;
+      margin-left: 7em;
       
     }
   }
