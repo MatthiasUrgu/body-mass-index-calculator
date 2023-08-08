@@ -2,6 +2,7 @@
 import s from "./style.module.scss";
 import CardCalculator from "components/CardCalculator/cardCalculator";
 import Logo from "assets/img/logo.png";
+import VectorRight from "assets/img/VectorRight.png"
 
 function Header({title,content}) {
   /* use useState to radioButton to change in same times the taille:'CM' to 'Inch'  weight:Kg to Ib  */
@@ -19,6 +20,7 @@ function Header({title,content}) {
         </div>
         <CardCalculator/>
       </div>
+      <img className={s.imgVector} src={VectorRight} alt="imgVector" />
       <div className={s.blueBox}></div>
     </section>
   );

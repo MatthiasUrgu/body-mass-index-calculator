@@ -50,6 +50,9 @@
       padding-top: 10em;
     }
   }
+  .imgVector{
+    display: none;
+  }
 }
 
 
@@ -101,6 +104,14 @@
       }
 
     }
+    .imgVector{
+   display: flex;
+   position: absolute;
+   right: 8em;
+   top:38em;
+   width: 100px;
+   filter: grayscale(0.8);
+  }
   }
 }
 

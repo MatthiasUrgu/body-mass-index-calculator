@@ -4,6 +4,9 @@
     align-items: center;
     margin-bottom: 4em;
     margin-top: 4em;
+    .imgVector{
+        display: none;
+    }
 }
 
 
@@ -21,9 +24,18 @@
 //Tablet responsive
 @media (width > 768px) and (width < 1442px){
     .cardContainer{
+        margin-right:5em ;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
-
+        justify-content: space-evenly;
+        .widthParapgraph{
+            width: 30em;
+            margin-right: 2em;
+        }
+        .imgVector{
+            display: block;
+            width: 75px;
+            filter: grayscale(0.8);
+        }
     }
 }
