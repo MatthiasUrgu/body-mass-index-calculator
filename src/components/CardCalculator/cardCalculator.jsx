@@ -4,18 +4,14 @@ import s from './style.module.scss'
 function CardCalculator() {
 
     const [isMetric,setMetric] = useState(true)
-    const [Height,setHeight] = useState(0)
-    const [Weight,setWeight] = useState(0)
-
-
-
+    const [Height,setHeight] = useState("")
+    const [Weight,setWeight] = useState("")
 
     function toggleMetric(e){
         setMetric(!isMetric)
     }
 
     function handleHeight(e){
-        
         setHeight(e.target.value)
         
     }
@@ -57,12 +53,12 @@ function CardCalculator() {
                     <h1>Enter your details below</h1>
                     <div className={`${s.flexRadio} ${s.marginTop}`}>
                         <div className={s.metric}>
-                            <input onChange={toggleMetric} type="radio" name="Metric"   checked={isMetric} />
+                            <input onChange={toggleMetric} type="radio" name="Metric"   checked={isMetric}/>
                             
                             <label>Metric</label>
                         </div>
                         <div className={s.imperial}>
-                            <input onChange={toggleMetric} type="radio" name="imperial"  checked={!isMetric} />
+                            <input onChange={toggleMetric} type="radio" name="imperial"  checked={!isMetric}  />
                             <label>Imperial</label>
                         </div>
                     </div>
@@ -71,7 +67,7 @@ function CardCalculator() {
                         <div className={s.heightNumber}>
                            <label className={s.label}>Height</label>
 
-                            <input className={s.input} type="number" value={Height} onChange={handleHeight}/>
+                            <input className={s.input} type="number" value={Height} onChange={handleHeight} placeholder='ex: 1.78'/>
                             <span className={s.spanMetric}>
                                 {isMetric ? 'M' : 'Ibs'}
                             </span>
@@ -79,7 +75,7 @@ function CardCalculator() {
                         <div className={`${s.weightNumber} `}>
                             <label className={s.label}>Weight</label>
 
-                            <input className={s.input}type="number" value={Weight} onChange={handleWeight} />
+                            <input className={s.input}type="number" value={Weight} onChange={handleWeight} placeholder='ex: 35' />
                             <span className={s.spanMetric}>
                                 {isMetric ? 'Kg' : 'Inch'}
                             </span>
