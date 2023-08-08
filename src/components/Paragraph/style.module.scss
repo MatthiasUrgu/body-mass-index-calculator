@@ -16,3 +16,12 @@
     
   }
 }
+
+@media (width>768px) and (width < 1442px){
+  .containerParagraph{
+    display: flex;
+    align-items:flex-start;
+    width: 28em;
+    
+  }
+}

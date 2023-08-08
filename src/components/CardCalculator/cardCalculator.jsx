@@ -4,8 +4,11 @@ import s from './style.module.scss'
 function CardCalculator() {
 
     const [isMetric,setMetric] = useState(true)
-    const [Height,setHeight] = useState(null)
-    const [Weight,setWeight] = useState(null)
+    const [Height,setHeight] = useState(0)
+    const [Weight,setWeight] = useState(0)
+
+
+
 
     function toggleMetric(e){
         setMetric(!isMetric)

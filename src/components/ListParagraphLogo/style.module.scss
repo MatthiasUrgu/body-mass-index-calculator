@@ -5,9 +5,24 @@
     margin-top: 3em;
     display: flex;
     flex-direction: column;
-    background: $GradientOther;
     padding: 10px;
     margin-bottom: 5em;
+    .background{
+        background: $GradientOther;
+        border-radius: 30px;
+        
+    }
     
    
+}
+
+@media (width > 769px) and (width < 1442px){
+    .ListContainer{
+        .background{
+        display: flex;
+
+        flex-direction: row;
+    }
+        
+    }
 }
