@@ -18,11 +18,14 @@
   }
 }
 
-@media (width>768px) and (width < 1442px){
+@media (width>768px){
   .containerParagraph{
     display: flex;
     align-items:flex-start;
     
+    h1{
+      font-size: $SizeTitleDesktop;
+    }
     
   }
 }

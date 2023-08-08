@@ -21,10 +21,10 @@
 }
 
 
-//Tablet responsive
-@media (width > 768px) and (width < 1442px){
+//desktop responsive
+@media (width > 768px) and (width < 1025px){
     .cardContainer{
-        margin-right:5em ;
+        margin-right:1em ;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -37,5 +37,26 @@
             width: 75px;
             filter: grayscale(0.8);
         }
+    }
+}
+//Tablet responsive
+@media (width > 1024px){
+    .cardContainer{
+        margin-right:4em ;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .widthParapgraph{
+            width: 29em;
+            margin-right: 5em;
+        }
+        .marginImg{
+            margin-left: 15em;
+        .imgVector{
+            display: block;
+            width:85px;
+            filter: grayscale(0.8);
+        }
+    }
     }
 }

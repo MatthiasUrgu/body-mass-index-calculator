@@ -170,7 +170,7 @@
 
 
 //Desktop
-@media (width > 768px) and (width < 1441px){
+@media (width > 768px) and (width < 1025px){
   //metric unity in the inputs
 
   .bmiCalculator{
@@ -231,6 +231,83 @@
 }
 }
 
+@media (width > 1024px) and (width < 1441px){
+  //metric unity in the inputs
+
+  .bmiCalculator{
+    position: relative;
+    left: 2em;
+    top: -2em;
+    margin-top: -1em;
+    h1{
+      justify-content: flex-start;
+    }
+  .flexRadio{
+    justify-content: flex-start;
+    .imperial{
+      margin-left: 12em;
+      
+    }
+  }
+
+  .calculNumber{
+    display: flex;
+    align-items: center;
+    .heightNumber{
+      display: flex;
+      flex-direction: column;
+      
+      
+    
+    .input {
+      width: 10em;
+      height: 2em;
+      margin-right: 2em;
+   
+    }
+  }
+    .weightNumber{
+      display: flex;
+      flex-direction: column;
+      
+    
+    .input {
+      width: 10em;
+      height: 2em;
+   
+    }
+  }
+    .spanMetric{
+      display:block;
+      top: -1.6em;
+      left: 7.5em;
+      width: 2em;
+  }
+
+ 
+  }
+  .resultNumber {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em;
+    border: none;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    background: linear-gradient(
+      90deg,
+      rgb(99, 68, 255) 0%,
+      rgba(99, 68, 255,0.8) 100%
+      
+    );
+    height: 70px;
+   .paragrapghResult{
+    margin: 0;
+    width: 200px;
+   }
+  }
+}
+}
 
 
 

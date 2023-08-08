@@ -78,7 +78,7 @@
 //Desktop responsive
 @media (width > 768px) and (width < 1025px) {
   .boxContainer {
-    margin-bottom: 9em;
+    
     .logoImg{
       justify-content: flex-start;
     }
@@ -112,6 +112,51 @@
    right: 8em;
    top:38em;
    width: 100px;
+   filter: grayscale(0.8);
+  }
+  }
+}
+
+
+//Desktop responsive
+@media (min-width : 1025px){
+  .boxContainer {
+  
+    .logoImg{
+      justify-content: flex-start;
+    }
+    .blueBox {
+      height: 70vh;
+      width: 120vh;
+    }
+    .headerContainer{
+      margin-top: 6em;
+      flex-direction: row;
+      align-items: stretch;
+      
+      
+      .textHeader{
+        align-items: flex-start;
+        width: 23em;
+        margin-right: 13em;
+
+        h1{
+          font-size: 3em;
+          width: 7.5em;
+          text-align: left;
+        }
+        p{
+        text-align: left;
+                }
+      }
+
+    }
+    .imgVector{
+   display: flex;
+   position: absolute;
+   right: 15em;
+   top:40em;
+   width: 125px;
    filter: grayscale(0.8);
   }
   }

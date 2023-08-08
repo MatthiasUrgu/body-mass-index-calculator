@@ -23,7 +23,8 @@ function ParagraphCardList() {
         title="Gender"
         content="The development and body fat composition of gitls and boys vary withage.Consequently, a child's age and gender are considered when evaluring their BMI."
       />
-      <img className={s.imgVector}src={VectorLeft} alt="VectorLeft"  />
+      
+      <div className={s.marginImg}><img className={s.imgVector}src={VectorLeft} alt="VectorLeft"  /></div>
 
 
       <ParagraphCard

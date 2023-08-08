@@ -6,10 +6,7 @@ import ParagraphCardList from "components/ParagraphCardList/ParagraphCardList";
 
 
 
-function App() {
-
-
-  
+function App() {  
   return (
     <section>
       <div className={s.container}>
