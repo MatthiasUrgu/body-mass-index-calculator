@@ -1,70 +1,67 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Hi there👋, I'm Matthias Urgu
 
-## Available Scripts
+Buidling things for training | A junior web dev in Belgium
 
-In the project directory, you can run:
 
-### `npm start`
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Body Mass Calculator
 
-### `npm run build`
+Welcome to the Body Mass Calculator project! This single-page application allows users to determine if they are underweight, normal weight, overweight, or obese based on their body mass index (BMI).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Table of Contents
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [About](#about)
+- [Demo](#demo)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## About
 
-### `npm run eject`
+The Body Mass Calculator is a React.js project designed to help users assess their body weight status using the BMI calculation. It was created as a personal project with the primary goal of improving:
+- React.js skills
+- Enhancing my coding logic
+- Practicing SCSS, including concepts such as Mixins, Includes, Variables, and Responsiveness.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Features
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Calculate BMI based on user-provided weight and height.
+- Display the calculated BMI and its corresponding weight status (e.g., underweight,   normal weight, overweight, obese).
+- Provide a clear visual representation of the weight status using color-coded indicators.
+- Responsive design that adapts well to various screen sizes.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To run the Body Mass Calculator on your local machine, follow these steps:
 
-## Learn More
+- Clone this repository: `git clone https://github.com/your-username/body-mass-calculator.git`.
+- Navigate to the project directory: `cd body-mass-calculator`.
+- Install dependencies: `npm install`.
+- Start the development server: `npm start`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Open your web browser and go to `http://localhost:3000` (or the port displayed in your terminal).
+- Enter your weight (in kilograms) and height (in centimeters) in the provided fields.
+- Click the "Calculate" button to see your BMI and weight status.
 
-### Code Splitting
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- React.js: Front-end library for building user interfaces.
+- SCSS: Used for styling, including Mixins, Includes, and Variables.
+- Responsive Design: Ensured the application looks and functions well on various devices.
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Demo
+live demo : https://body-mass-index-calculator-alpha.vercel.app/
+[![body-mass-calculator.png](https://i.postimg.cc/8zp4jcq5/body-mass-calculator.png)](https://postimg.cc/N5nmnsGq)
